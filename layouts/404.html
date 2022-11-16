@@ -1,0 +1,15 @@
+{{ define "main" }}
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ .Site.Params.image_404 | relURL }}')">
+	<div class="content">
+		<div class="site-heading">
+			<p style="font-size: 48pt; margin-bottom:25px">404</p>
+			<p>{{ .Site.Params.title_404 }}</p>
+		</div>
+	</div>
+</header>
+
+<script>
+	document.header.classList.add('page-fullscreen');
+</script>
+{{ end }}

@@ -1,0 +1,70 @@
+baseURL = "https://codeclabs.cn"
+languageCode = "en-us"
+title = "Codec Labs"
+theme="archie"
+copyright = "© Codec Labs"
+
+pygmentsstyle = "monokai"
+# pygmentsstyle = "dracula"
+# pygmentsstyle = "fruity"
+# pygmentsstyle = "solarized-dark256"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+hasCJKLanguage = true
+
+summaryLength = 50
+
+enableEmoji = true
+
+[params]
+	mode="toggle"
+	useCDN=false
+    subtitle = """
+晚归府\n
+唐・白居易\n
+晚从履道来归府，街路虽长尹不嫌。\n
+马上凉于床上坐，绿槐风透紫蕉衫。\n
+    """
+
+    image_404 = "img/404-bg.jpg"
+    title_404 = "你来到了没有知识的荒原 :("
+    customcss = ["css/custom.css"]
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/codeclabs-cn/codeclabs-cn.github.io"
+
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/codeclabs_cn/"
+
+# https://discourse.gohugo.io/t/goldmark-hard-line-breaks-in-a-table-cell/23400/5
+[markup]
+defaultMarkdownHandler = "goldmark"
+
+[markup.goldmark]
+[markup.goldmark.renderer]
+  unsafe = true
+
+[[menu.main]]
+name = "首页"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "全部文章"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "关于"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "标签"
+url = "/tags"
+weight = 4
